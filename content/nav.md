@@ -95,4 +95,6 @@ Reference for all css data types like `<color>`, `<angle>` and `<length>`
 
 ## Using Imba Router [doc=docs/routing] [href=/guides/routing] [skip]
 
-## Keyboard Shortcuts [doc=guides/shortcuts] [href=/guides/shortcuts]
+# Posts [href=/posts] [doc=posts/index]
+
+## ADHD and programming [doc=posts/adhd-and-programming] [href=/posts/adhd-and-programming]
