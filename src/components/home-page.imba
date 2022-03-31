@@ -349,19 +349,6 @@ tag home-page
 					<div[fs:xl/1.8 fl:100 1 470px]>
 						<p[c:cool8]> "Hierarchical notes on philosophy, neurodiversity, programming, and making {<i> 'massive positive impact on humanity'}."
 	
-			for item,i in ls('/home/examples').children
-				<home-section[my:10 py:10] .s{i} .{item.flagstr}>
-					<.bg>
-					<.markdown>
-						<.h2.html.title.gradient innerHTML=item.head>
-						<.content.html innerHTML=(item.html or '')>
-
-			if false
-				<home-section[pt:30]>
-					<h2[c:pink6]> `Unbelievable\nPerformance`
-					<h3[mb:6]> <div[max-width:560px]> `Imba's groundbreaking memoized DOM is an order of magnitude faster than virtual DOM approaches.`
-					<.box.p3d[pos:rel]>
-						css w:1cw fs:lg d:hflex p:8 px:10
-						<div[pos:abs inset:0 bg:warmer2 rd:lg z:-4px]>
-						<div.body[w: <460px]> `A benchmark was conducted by comparing a Todo MVC implementation across frameworks. The benchmark steps through a deterministic sequence of state alterations measuring the time taken to reconcile the whole application view after: Toggling an item, removing an item, inserting an item, renaming an item, and doing nothing.`
-						<bench-graph[ml:auto as:flex-end z:-3px]>
+			<home-section[pt:30]>
+				<h2[c:pink6 p:4]> "Work in progress. Expect changes"
+				<div.body> "To learn more about the tech that is making sites like this possible, check out { <a[td:underline] href='https://imba.io'> 'Imba' } and { <a[td:underline] href='https://dendron.so'> 'Dendron' }."

@@ -124,7 +124,7 @@ tag app-search-field
 		<a[jc:flex-start d:hflex cursor:pointer fs:sm a:center] @click.emit('showsearch') @hotkey('mod+k|s')>
 			# css c:blue4/80 @hover:blue3
 			<svg[d:block size:16px lh:16px va:top pos:relative c:hue4] src='../assets/icons/search.svg'>
-			<span[mx:1 tt:none fw:normal fl:1 d@!500:none]> "Search docs ..."
+			<span[mx:1 tt:none fw:normal fl:1 d@!500:none]> "Search..."
 			<span.keycap[bc:hue7/40 c:hue7/50 h:20px px:1 fw:500 ml:0.5 tt:none d@!500:none]> isApple ? "⌘K" :'Ctrl K'
 
 
@@ -248,7 +248,7 @@ tag app-search
 					<div[d:hflex ja:center]>
 						<input$input type='text' bind=query 
 							@input.debounce(50ms)=refresh
-							placeholder="Search docs"
+							placeholder="Search..."
 							spellcheck=no
 							>
 							css p:2 w:100% bg:white rd:md bd:gray2 bxs:xs
