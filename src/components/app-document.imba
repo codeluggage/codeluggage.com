@@ -393,11 +393,6 @@ tag app-document
 					for item in breadcrumbs
 						<span> <a href=item.href .self=(item == data)> item.navName or item.name
 					<app-search-field>
-				<div[d:hflex ja:center bg:yellow2 p:3 4 rd:lg c:yellow9 mt:2 fs:xs]>
-					<div[fl:1 d:vflex]>
-						<span[c:yellow9 fw:600 fs:sm]> "We are overhauling the docs, and we need your help!"
-						<span[c:yellow8]> "Do you have a few minutes to answer what you think is missing? "
-					<a[c:blue6 td:underline fs:sm fw:600] href='https://form.typeform.com/to/GdMKZMBh'> 'Take Survey'
 				<div$content>
 					if doc.api?
 						<api-symbol-entry key=doc.href data=doc>
