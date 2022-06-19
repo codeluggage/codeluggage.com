@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 const chokidar = require 'chokidar'
 const path = require 'path'
 const fs = require 'fs'
-const marked = require '../src/util/markdown'
+const markdown = require '../src/util/markdown'
 # const fetch = require 'node-fetch'
 
 const bundle = 'content'
@@ -103,7 +103,7 @@ watcher.on('all') do
 			let name = item.name.slice(0,-3)
 			item.name = name
 
-			let md = marked.render(item.body,path: id,file:item)
+			let md = markdown.render(item.body,path: id,file:item)
 			# item.html = md.body
 			# item.toc = md.toc
 			# Object.assign(item,md.meta)
@@ -152,7 +152,7 @@ watcher.on('all') do
 					let val = last.pops.contentValue
 					# console.warn "COMMENT IS LAST",val,last.start.startOffset,item.body.length,last.start.value,last.pops.span
 					# console.log last.start
-					item.meta.foot = marked.htmlify(val)
+					item.meta.foot = markdown.htmlify(val)
 					item.body = item.body.slice(0,last.start.offset)
 					# throw yes
 

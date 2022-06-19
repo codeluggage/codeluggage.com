@@ -15,12 +15,12 @@
     }
   ],
   "engines": {
-    "node": ">=13.10.0"
+    "node": ">=17.9.1"
   },
   "scripts": {
     "start": "imba -w index.imba",
     "dev": "imba -wSM index.imba",
-    "build": "npm run build-content && npm run build-api-docs && imba build index.imba",
+    "build": "npm run build-content && npm run build-api-docs && npm run build-site",
     "watch": "imba scripts/build-content.imba -- -w",
     "build-site": "imba build index.imba",
     "build-content": "imba scripts/build-content.imba",
@@ -44,8 +44,8 @@
     "@types/node": "^13.13.52",
     "chokidar": "^3.5.2",
     "express": "^4.17.1",
-    "imba": "^2.0.0-alpha.204",
-    "marked": "^0.7.0",
+    "imba": "^2.0.0-alpha.209",
+    "marked": "^4.0.17",
     "passport": "^0.4.1",
     "perfect-arrows": "^0.3.3",
     "quick-score": "^0.0.13",

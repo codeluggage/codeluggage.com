@@ -1,9 +1,9 @@
-const marked = require 'marked'
-import {aliases} from 'imba/src/compiler/styler'
+import { marked } from 'marked'
+import { aliases } from 'imba/src/compiler/styler'
 
 marked.setOptions({
 	gfm: true
-	tables: true
+	# tables: true # Set automatically now?
 	breaks: false
 	pedantic: false
 	sanitize: false
@@ -335,8 +335,9 @@ export def render content, o = {}
 
 	# if object:title
 	let tokens = marked.lexer(content)
-	let parser = new marked.Parser(opts, renderer)
-	renderer.parser = parser
+	let parser = new marked.Parser(opts)
+	# renderer.parser = parser
+	# https://github.com/markedjs/marked/issues/545
 	renderer.toc = object.toc
 	opts.parser = parser
 	object.body = parser.parse(tokens)
