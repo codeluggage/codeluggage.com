@@ -20,7 +20,7 @@
   "scripts": {
     "start": "imba -w index.imba",
     "dev": "imba -wSM index.imba",
-    "build": "npm run build-content && npm run build-api-docs && npm run build-site",
+    "build": "npm run build-examples && npm run build-content && npm run build-api-docs && npm run build-site",
     "watch": "imba scripts/build-content.imba -- -w",
     "build-site": "imba build index.imba",
     "build-content": "imba scripts/build-content.imba",
