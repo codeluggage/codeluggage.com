@@ -141,7 +141,8 @@ class Entry
 		nextSibling or parent.next
 
 	get tocTitle
-		#tocTitle ||= data.title.replace(/\s*\(.*\)/g,'')
+		# This won't get a title when we hit a path like /examples
+		#tocTitle ||= data..title..replace(/\s*\(.*\)/g,'') or ''
 		
 	get toc?
 		options.toc or options["toc-pills"]
