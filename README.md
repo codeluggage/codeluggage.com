@@ -4,5 +4,5 @@ Hierarchical notes on philosophy, neurodiversity, programming, and making **mass
 
 ## Technology
 
-Based on https://github.com/imba/imba.io - check it out!
+Based on <https://github.com/imba/imba.io> - check it out!
 
