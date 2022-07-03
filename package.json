@@ -1,43 +1,33 @@
 {
-  "name": "imba.io",
-  "description": "Official website for Imba",
+  "name": "codeluggage.com",
+  "description": "Notes on philosophy, neurodiversity, programming, and making massive positive impact on humanity.",
   "keywords": [
     "imba",
-    "website"
+    "website",
+    "digital-garden"
   ],
-  "author": "Sindre Aarsaether",
-  "bugs": "https://github.com/somebee/imba.io/issues",
-  "version": "1.0.0",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/somebee/imba.io/raw/master/LICENSE"
-    }
-  ],
+  "author": "Matias Forbord",
+  "bugs": "https://github.com/codeluggage/codeluggage.com/issues",
+  "version": "0.1.0",
   "engines": {
-    "node": ">=17.9.1"
+    "node": ">=18.4"
   },
   "scripts": {
     "start": "imba -w index.imba",
     "dev": "imba -wSM index.imba",
     "build": "npm run build-examples && npm run build-content && npm run build-api-docs && npm run build-site",
-    "watch": "imba scripts/build-content.imba -- -w",
     "build-site": "imba build index.imba",
     "build-content": "imba scripts/build-content.imba",
-    "watch-content": "imba scripts/build-content.imba -- -w",
     "build-api-docs": "imba --node.external typescript scripts/build-api-docs.imba",
     "build-examples": "cd content/examples/express && imba build app.imba",
-    "docker-build": "docker build -t imba.io:`git log --pretty=format:'%h' HEAD -n1` .",
-    "docker-deploy": "docker push imba.io:`git log --pretty=format:'%h' HEAD -n1`",
-    "docker-run": "docker run -p3011:3011 -t -i imba.io:`git log --pretty=format:'%h' HEAD -n1`"
+    "watch": "imba scripts/build-content.imba -- -w",
+    "watch-content": "imba scripts/build-content.imba -- -w"
   },
-  "files": [],
-  "directories": {},
   "main": "./index.imba",
-  "homepage": "http://imba.io",
+  "homepage": "https://codeluggage.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/imba/imba.io.git"
+    "url": "git://github.com/codeluggage/codeluggage.com.git"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
