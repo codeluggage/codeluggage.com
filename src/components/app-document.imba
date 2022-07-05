@@ -471,12 +471,6 @@ tag app-document-toc
 		<.children> for item in data.sections
 			<TocItem data=item level=1>
 
-		<.wip[mt:4 w: <240px ml:2 fs:sm- c:gray6 bdl:2px solid yellow4 pl:3 py:1]>
-			<i> "March 13th, 2022"
-			<div> "We are overhauling the docs, and we need your help!"
-			<div[my:4]> "Do you have a few minutes to answer what you think is missing?"
-			<a[td:underline] href="https://form.typeform.com/to/GdMKZMBh"> "Take survey"
-	
 tag embedded-app-document
 	def hydrate
 		let data = ls(dataset.path)
