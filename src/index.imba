@@ -44,14 +44,6 @@ tag app-root
 	get page
 		ls(document.location.pathname) or ls('/language/introduction')
 
-	get announcement
-		return {
-			id: 'documentation-week-feedback'
-			title: 'Can you answer a few questions to help us improve these docs?'
-			link: 'https://form.typeform.com/to/GdMKZMBh'
-			linkText: 'Take the survey'
-		}
-
 	def runCodeBlock data
 		if data.example
 			router.go(data.example.path)
